@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "sLel+F4bFo51ACodzXo0eXwi5PB76S0Bbaq8+wY4NJINlurkAO8qGFM4+Ao1QC4NIfokICLAYaGLmjp8jDN+8w==",
+  "dgSpecHash": "5Z6bx2D2640t4OiLmvnozCM4uWIKkYV14ziVHyorvYIIEnEGuNBMCpRnMVcG7apa6Vc0LJCGcB6RB2HM/Kt/sA==",
   "success": true,
   "projectFilePath": "C:\\Users\\diego\\Portfolio\\minimal-api\\minimal-api\\minimal-api.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\8.0.13\\microsoft.aspnetcore.diagnostics.entityframeworkcore.8.0.13.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.13\\microsoft.entityframeworkcore.8.0.13.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.13\\microsoft.entityframeworkcore.abstractions.8.0.13.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.13\\microsoft.entityframeworkcore.analyzers.8.0.13.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\8.0.13\\microsoft.entityframeworkcore.inmemory.8.0.13.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.13\\microsoft.entityframeworkcore.relational.8.0.13.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.1\\microsoft.extensions.caching.memory.8.0.1.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.1\\microsoft.extensions.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
