@@ -1,7 +1,22 @@
+using System.Collections;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using minimal_api;
+using minimal_api.Infrastructure.Database;
+using minimal_api.Middlewares.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Identifica se o ambiente é de desenvolvimento
+if (builder.Environment.IsDevelopment())
+{
+    //Configura a serialização de JSON. Recomenda-se para ambiente de desenvolvimento por gasto de processamento.
+    builder.Services.ConfigureHttpJsonOptions(opt =>
+    {
+        opt.SerializerOptions.WriteIndented = true;
+        opt.SerializerOptions.WriteIndented = true;
+    });
+}
 
 //Setando o banco de dados em memória
 builder.Services.AddDbContext<TodoDb>(
@@ -12,24 +27,11 @@ builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 var app = builder.Build();
 
+//URL HelloWorld
 app.MapGet("/", () => "Hello World!");
 
-app.MapGet("/todoitems", async (TodoDb todoDb) => 
-    await todoDb.Todos.ToListAsync());
-
-app.MapGet("/todoitems/complete", async (TodoDb db) =>
-    await db.Todos.Where(t => t.IsComplete).ToListAsync());
-
-app.MapGet("/todoitems/{id}", async (int id,TodoDb db) =>
-    await db.Todos.FindAsync(id) 
-        is Todo todo ? Results.Ok(todo) : Results.NotFound());
-
-app.MapPost("/todoitems", async (Todo todo, TodoDb db) =>
-{
-    db.Todos.Add(todo);
-    await db.SaveChangesAsync();
-
-    return Results.Created($"/todoitems/{todo.Id}", todo);
-});
+//Registra os endpoints de Todo no app
+app.RegisterTodoEndpoints();
 
 app.Run();
+

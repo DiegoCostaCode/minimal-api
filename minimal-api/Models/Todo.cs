@@ -1,4 +1,4 @@
-namespace minimal_api;
+namespace minimal_api.Models;
 
 public class Todo
 {
